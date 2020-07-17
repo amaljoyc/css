@@ -61,3 +61,44 @@ div p {
 This rule eg. is applied on the p tags who are the children, grandchildren etc of a div tag. This is the most commonly used combinator.
 
 Note: sometimes combinators can be less performant.
+
+## `CSS Box Model`
+
+every element is a box in css and every elements consists of the following (ordered from inner box to outer box),
+1. element content (most inner)
+2. padding
+3. border
+4. margin (most outer)
+
+#### `Margin Collapsing`
+for those elements which are adjacent to each other, their margins will overlap or collapse into a single margin (on their meeting side). And the bigger margin wins.
+
+#### `Block-level HTML Elements`
+- A block-level element always starts on a new line and takes up the full width available (stretches out to the left and right as far as it can).
+- eg, div, p, section, li, hr etc.
+
+#### `Inline HTML Elements`
+- An inline element does not start on a new line and it only takes up as much width as necessary.
+- eg, span, a, b, br, img etc.
+- inline elements doesn't have padding or border or margin.
+- also, setting a width or height on an inline element also has no effect.
+
+
+#### `property width = 100%`
+- 100% means, spread the width to 100% of the screen or more accurately 100% of the container element where it is contained.
+- this is by default the case for block level html elements, as they take the full width by default
+- this is not the case by default for inline html elements.
+
+#### `box-sizing property`
+- the width or height property by default is set for content box only. ie, box-sizing defaults to `content-box`.
+- however if you want the width and height to also consider the padding and border, you must use `box-sizing: border-box;`
+- box-sizing can only go upto border (which also includes padding). So you can never include margin into box sizing.
+
+#### `display property`
+- used to change an element from block to inline or vice-versa
+- `display: none;` vs `visibility: hidden;``
+    - `display: none` means that the element is not visible and it also doesn't "block its position". Other elements can (and will) take its place instead.
+    - `visibility: hidden` means the element is not visible, but it will also "block its position" leaving an empty position instead.
+    - in both cases, the elements are still part of the dom (even though it is not displayed in the page).
+
+#### ``

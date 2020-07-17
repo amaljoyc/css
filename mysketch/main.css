@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+}
+
+#main-header {
+    background-color: lightgray;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+}
+
+#main-nav__ul {
+    margin: 0;
+    padding: 0px 30px;
+}
+
+.main-nav__li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#main-content {
+    height: calc(100% - 60px - 40px);
+}
+
+#main-content__title {
+    background-color: lightsalmon;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+#main-content__text {
+    margin: 50px 500px;
+}
+
+h1 {
+    color: white;
+    margin: 0;
+}
+
+#main-footer {
+    background-color: lightgray;
+    text-align: center;
+    height: 40px;
+}
