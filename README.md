@@ -101,4 +101,16 @@ for those elements which are adjacent to each other, their margins will overlap 
     - `visibility: hidden` means the element is not visible, but it will also "block its position" leaving an empty position instead.
     - in both cases, the elements are still part of the dom (even though it is not displayed in the page).
 
-#### ``
+#### `pseudo class`
+- represented using `:class-name`
+- defines the style of a special state of an element
+- eg, a:hover where hover is the pseudo class name applied on anchor tag
+
+#### `pseudo element`
+- represented using `::element-name`
+- defines the style of a specific part of an element
+- eg, p::first-letter where first-letter is the pseudo element
+
+#### `Grouping css rules`
+- use the comma for grouping similar rules into a single rule
+- eg, #myid, .myclass { color: red; }

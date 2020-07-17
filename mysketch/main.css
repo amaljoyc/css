@@ -6,12 +6,42 @@ body {
     background-color: lightgray;
     height: 60px;
     line-height: 60px;
+}
+
+#brand {
+    color: chocolate;
+}
+
+.main-header__link {
+    text-decoration: none;
+}
+
+.main-header__link:hover,
+#brand:hover {
+    color: snow;
+}
+
+#main-header__left {
+    margin: 0;
+    padding-left: 30px;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 25px;
+    vertical-align: middle;
+}
+
+#main-nav {
+    margin: 0;
+    padding-right: 20px;
+    display: inline-block;
+    width: calc(100% - 170px);
     text-align: right;
+    vertical-align: middle;
 }
 
 #main-nav__ul {
     margin: 0;
-    padding: 0px 30px;
+    padding: 0;
 }
 
 .main-nav__li {
@@ -32,6 +62,12 @@ body {
 
 #main-content__text {
     margin: 50px 500px;
+}
+
+#first-para::first-letter {
+    color: chocolate;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 h1 {
