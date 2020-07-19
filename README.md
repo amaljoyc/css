@@ -126,3 +126,51 @@ for those elements which are adjacent to each other, their margins will overlap 
 - width
 - height
 
+## `Addtional Info on CSS selectors`
+
+we already saw how you can combine classes and or ids with CSS combinators above. Those combinators are used to target elements which are either siblings and children. However, we could also combine them in another way as shown below,
+
+```
+<a href="" class="active"></a>
+
+a.active {
+
+}
+```
+
+here `a.active` means, select those anchor tag which has a class `active`.
+
+#### `id vs class selectors`
+- it is recommended to use class selectors over id selectors. The reason is because, class selectors are only used for css styling purposes, whereas ids are also used for html linking purposes
+- so even if you have only 1 element to style, use it as a class selector rather than an id selector.
+- use id selector for styling only if you already need to use that element as an id for linking purpose.
+
+#### `!important`
+```
+div {
+    color: red !important;
+}
+```
+- `!important` will overwrite specificity and all other selectors
+- in general don't use this (in 99% cases).
+
+#### `box-shadow property`
+eg,
+```
+box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
+```
+
+#### `to build a circle`
+- use `border-radius: 50%` -> will convert square to circle
+- and then give appropriate same height and width values.
+
+#### `to center an element horizontally`
+- for text we can use, `text-align: center`
+- for other elements like eg, `div`, we can center then using margin auto as given below (auto below will make sure equal space is used for left and right)
+```
+margin: 0 auto;
+```
+- `margin: auto` will keep equal space to left, right, top, bottom.
+
+
+
