@@ -21,6 +21,18 @@ body {
     color: snow;
 }
 
+.main-header__link--cta {
+    background-color: chocolate;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+}
+
+.main-header__link--cta:hover {
+    color: chocolate;
+    background-color: white;
+}
+
 #main-header__left {
     margin: 0;
     padding-left: 30px;
@@ -54,7 +66,7 @@ body {
 }
 
 #main-content__title {
-    background-color: lightsalmon;
+    background: url("forest.jpg");
     height: 200px;
     line-height: 200px;
     text-align: center;

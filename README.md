@@ -114,3 +114,15 @@ for those elements which are adjacent to each other, their margins will overlap 
 #### `Grouping css rules`
 - use the comma for grouping similar rules into a single rule
 - eg, #myid, .myclass { color: red; }
+
+## `Main and Important CSS Properties`
+
+- color -> to change text color
+- background-color
+- display -> to change the way an element is positioned (block or inline or none)
+- padding -> distance between content and border
+- border
+- margin -> to add some spacing around a box (outside the border of a box)
+- width
+- height
+
