@@ -172,5 +172,23 @@ margin: 0 auto;
 ```
 - `margin: auto` will keep equal space to left, right, top, bottom.
 
+#### `using float for positioning`
+- float is now not recommended anymore, as it brings lot of issues.
+- you can do the same with flex box a lot more easier and simpler.
+- float can basically be used to position an element to left or right
+- it is important to clear the float just below its use, so that the elements after it is not affected with floating
+
+```
+float: right; -> will float to right
+```
+
+in order to clear the flow for next element, we do,
+```
+clear: both; -> will clear all left and right floats from above
+```
+
+#### `using margin auto to center a div or element`
+- `margin: 0 auto;` will center an element horizontally.
+- `margin: auto;` will center an element horizontally and vertically
 
 

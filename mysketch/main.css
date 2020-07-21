@@ -83,6 +83,23 @@ body {
     font-size: 30px;
 }
 
+.float {
+    float: right;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.circle {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: salmon;
+    margin: 0 auto;
+}
+
 h1 {
     color: white;
     margin: 0;
