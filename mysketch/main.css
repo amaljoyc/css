@@ -6,6 +6,9 @@ body {
     background-color: lightgray;
     height: 60px;
     line-height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #brand {
@@ -63,7 +66,11 @@ body {
 }
 
 #main-content {
+    /*
     height: calc(100% - 60px - 40px);
+    height like above only make sense if the content is within a screen height
+    if the content overflows (beyond height of the screen), then it doesn't make sense to put it a height relative to screen size
+    */
 }
 
 #main-content__title {
@@ -71,10 +78,18 @@ body {
     height: 200px;
     line-height: 200px;
     text-align: center;
+    position: fixed;
+    top: 60px;
+    width: 100%;
 }
 
 #main-content__text {
     margin: 50px 500px;
+    padding-top: 260px;
+}
+
+#main-content__bottom {
+    padding-bottom: 40px;
 }
 
 #first-para::first-letter {
@@ -97,7 +112,7 @@ body {
     width: 50px;
     border-radius: 50%;
     background-color: salmon;
-    margin: 0 auto;
+    margin: auto;
 }
 
 h1 {
@@ -109,4 +124,7 @@ h1 {
     background-color: lightgray;
     text-align: center;
     height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
