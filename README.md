@@ -205,4 +205,25 @@ clear: both; -> will clear all left and right floats from above
     - bottom
     - left
     - right
+
+#### position: fixed
 - `top: 0;` or `bottom: 0;` when used together with `position: fixed;` can be used to fix a nav bar to top or footer to bottom respectively.
+- `position: fixed;` will change an html element from `block` to `inline-block`
+
+#### z-index property
+- Used to change the z-axis position (from foreground to background)
+- By default every element has the value of `z-index: auto;` which is also equal to `z-index: 0;`
+- z-index will not have an effect on those elements where a position property is not applied, ie, where position is the default `static` value.
+- `z-index: -1; position: fixed;` can be used to move an element to the background.
+
+#### position: absolute
+- For absolutely positioned elements, the positioning context is defined on the basis of following 2 cases,
+    1. If none of the ancestors (parent elements) has a position property applied, then the positioning context of the (our) element is the html element.
+    2. If there is an ancestor with a position property applied, then the closest ancestor which has the position property applied is the positioning context of the (our) element.
+
+#### position: relative
+- With relative positioning, the element is not taken out of the document flow (whereas it is taken out of document flow for fixed and absolute positioning)
+- The element is positioned (with top, left etc properties) relative to its original position (whereas for fixed and absolute positioning the element is positioned against the html element or viewport or the parent element)
+- `overflow: hidden` can be used to hide the element when it goes out of its parent container after applying the relative positioning.
+
+#### position: sticky
