@@ -256,6 +256,7 @@ clear: both; -> will clear all left and right floats from above
 
 - `top: 0;` or `bottom: 0;` when used together with `position: fixed;` can be used to fix a nav bar to top or footer to bottom respectively.
 - `position: fixed;` will change an html element from `block` to `inline-block`
+- `fixed` will place an element fixed relative to the view-port (ie. the positioning context is view-port). So the top, bottom, left, right values you apply are actually applied from the view-port borders.
 
 #### z-index property
 
@@ -269,6 +270,7 @@ clear: both; -> will clear all left and right floats from above
 - For absolutely positioned elements, the positioning context is defined on the basis of following 2 cases,
   1. If none of the ancestors (parent elements) has a position property applied, then the positioning context of the (our) element is the html element.
   2. If there is an ancestor with a position property applied, then the closest ancestor which has the position property applied is the positioning context of the (our) element.
+- For absolute also, the element is taken out of the document flow, just like in the fixed case.
 
 #### position: relative
 
@@ -277,3 +279,10 @@ clear: both; -> will clear all left and right floats from above
 - `overflow: hidden` can be used to hide the element when it goes out of its parent container after applying the relative positioning.
 
 #### position: sticky
+
+- It is a hybrid or a combination of relative and fixed positioning.
+- Its pretty new and hence doesn't have proper browser support.
+
+### Images and Background Images
+
+TBD
