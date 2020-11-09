@@ -1,0 +1,32 @@
+.section__image {
+  margin: 16px;
+  height: 600px;
+  width: 25%;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 3px 3px 3px rgba(163, 63, 63, 0.3);
+}
+
+.section__text {
+  margin: 16px;
+  padding: 16px;
+  width: 180px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.linear-gradient {
+  margin: 16px;
+  background-image: linear-gradient(60deg, red, transparent, green);
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.radial-gradient {
+  margin: 16px;
+  background-image: radial-gradient(red, transparent, green);
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}

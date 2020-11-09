@@ -283,6 +283,13 @@ clear: both; -> will clear all left and right floats from above
 - It is a hybrid or a combination of relative and fixed positioning.
 - Its pretty new and hence doesn't have proper browser support.
 
-### Images and Background Images
+### Backgrounds and Images
 
-TBD
+- `background-size: cover` will ensure that the entire container is covered. Also it will adjust to the landscape / portrait of the background image used - so we don't have to adjust it using `%`.
+- `background-position: center` will ensure the image that doesn't fit into the container is cropped optimally - `center` here is equivalent to `background-position: 50% 50%` - ie, it will crop 50% of left/right side and 50% of top/bottom.
+- For styling images (not background images, but foreground images) - we could adjust the height and width using `%` (eg, `height: 100%`) and if we do so, it would take up the `%` height and width of its surrounding container - the only exception is, the surrounding container must be block or inline-block element.
+
+#### Gradients
+
+- Linear: using function linear-gradient()
+- Radial: using function radial-gradient() - it gives an elliptical shape by default (you could change it to circle)
